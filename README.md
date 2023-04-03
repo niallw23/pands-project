@@ -14,4 +14,5 @@ The data was collected by a man called Dr. Edgar Anderson in Canada. [^2]
 
 
 [^1] https://en.wikipedia.org/wiki/Iris_flower_data_set
+
 [^2] https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
