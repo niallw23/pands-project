@@ -9,6 +9,9 @@ As the name suggests, the Iris data set is a set of data. It is well known in co
 There are three iris species in the data set Iris setosa, Iris virginica, and Iris versicolor. The dataset consists of 150 samples, with 50 samples from each of three iris species. For each sample, four features are recorded: the length and width of the sepals (the green leaf-like structures that protect the flower bud) and the length and width of the petals (the colorful parts of the flower). This was all new to me as I don't think I've ever actually seen an iris flower.
 The data was collected by a man called Dr. Edgar Anderson in Canada. [^2]
 
+## Downloading the data set
+To use the data set, the first step was to download it. I looked at some examples where it was fed in through a URL but after watching the lecture videos and doing some more research (googling), I decided to save it locally as a csv file and work from there. I used this link and some helpful code to know it was working. [^3]
+
 
 
 
@@ -16,3 +19,5 @@ The data was collected by a man called Dr. Edgar Anderson in Canada. [^2]
 [^1] https://en.wikipedia.org/wiki/Iris_flower_data_set
 
 [^2] https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
+
+[^3] https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
