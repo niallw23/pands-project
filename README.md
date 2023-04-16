@@ -12,6 +12,9 @@ The data was collected by a man called Dr. Edgar Anderson in Canada. [^2]
 ## Downloading the data set
 To use the data set, the first step was to download it. I looked at some examples where it was fed in through a URL but after watching the lecture videos and doing some more research (googling), I decided to save it locally as a csv file and work from there. I used this link and some helpful code to know it was working. [^3]
 
+## The first task - Output a summary of each variable to a single text file
+My approach to the project was to carry out the recommended tasks first before trying to potentially perform any of my own analyses.
+To do this my research and our earlier lectures pointed me to the describe()[^4] function in pandas as opposed to trying to do my own summaries. As my data is numeric, when we get the summary it produces the count, mean, standard deviation, minimum value, 25/50/75 percentile marks and the maximum value. The example reading I looked at used the Californian housing market as a big data set - so it seemed like the best way for me to write a summary of my large data set. [^5]
 
 
 
@@ -21,3 +24,9 @@ To use the data set, the first step was to download it. I looked at some example
 [^2] https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
 
 [^3] https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+
+[^4] https://www.w3schools.com/python/pandas/ref_df_describe.asp
+
+[^5] https://www.askpython.com/python/examples/calculate-summary-statistics
+
+[^5] https://www.w3schools.com/python/pandas/pandas_dataframes.asp

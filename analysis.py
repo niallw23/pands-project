@@ -9,5 +9,6 @@ data = pd.read_csv('iris_csv.csv') # referenced in readme
 # first instruction
 # program should output a summary of each variable to a single text file
 
-
+summary = data.describe() #uses describe() to get the summary, referenced in readme
+ 
 
