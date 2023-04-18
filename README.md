@@ -15,6 +15,7 @@ To use the data set, the first step was to download it. I looked at some example
 ## The first task - Output a summary of each variable to a single text file
 My approach to the project was to carry out the recommended tasks first before trying to potentially perform any of my own analyses.
 To do this my research and our earlier lectures pointed me to the describe()[^4] function in pandas as opposed to trying to do my own summaries. As my data is numeric, when we get the summary it produces the count, mean, standard deviation, minimum value, 25/50/75 percentile marks and the maximum value. The example reading I looked at used the Californian housing market as a big data set - so it seemed like the best way for me to write a summary of my large data set. [^5]
+Having just had to correct some of my weekly tasks for not using 'with' I was better able to apply it to the project. I encountered an error when I tested though and realised I needed to change the argument to a string. A quick google search was thankfully enough to correct this quickly and it then wrote the summary file. [^6]
 
 
 
@@ -30,3 +31,5 @@ To do this my research and our earlier lectures pointed me to the describe()[^4]
 [^5] https://www.askpython.com/python/examples/calculate-summary-statistics
 
 [^5] https://www.w3schools.com/python/pandas/pandas_dataframes.asp
+
+[^6] https://www.geeksforgeeks.org/python-pandas-dataframe-to_string/

@@ -10,5 +10,10 @@ data = pd.read_csv('iris_csv.csv') # referenced in readme
 # program should output a summary of each variable to a single text file
 
 summary = data.describe() #uses describe() to get the summary, referenced in readme
- 
 
+# Write the summary statistics to a text file
+#with open('iris_summary.txt', 'w') as file:
+#    file.write(summary)  # got an error that argument must be string
+
+with open ('iris_summary.txt', 'w') as file:
+    file.write(summary.to_string())
