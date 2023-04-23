@@ -17,7 +17,7 @@ My approach to the project was to carry out the recommended tasks first before t
 To do this my research and our earlier lectures pointed me to the describe()[^4] function in pandas as opposed to trying to do my own summaries. As my data is numeric, when we get the summary it produces the count, mean, standard deviation, minimum value, 25/50/75 percentile marks and the maximum value. The example reading I looked at used the Californian housing market as a big data set - so it seemed like the best way for me to write a summary of my large data set. [^5]
 Having just had to correct some of my weekly tasks for not using 'with' I was better able to apply it to the project. I encountered an error when I tested though and realised I needed to change the argument to a string. A quick google search was thankfully enough to correct this quickly and it then wrote the summary file. [^6]
 
-
+## The second task - Saves a histogram of each variable
 
 
 [^1] https://en.wikipedia.org/wiki/Iris_flower_data_set

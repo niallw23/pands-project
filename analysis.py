@@ -21,7 +21,7 @@ summary = iris_data.describe() #uses describe() to get the summary, referenced i
 #second instruction
 #saves a histogram of each variable to png files
 
-for col in iris_data.columns[:-1]:
+for col in iris_data.columns[0:4]:
     plt.hist(iris_data[col])
     plt.title(col)
     plt.xlabel('Value')
