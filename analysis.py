@@ -21,9 +21,11 @@ summary = iris_data.describe() #uses describe() to get the summary, referenced i
 #second instruction
 #saves a histogram of each variable to png files
 
-for col in iris_data.columns[0:4]:
+for col in iris_data.columns[:-1]: #leaves out the last column (class) which is not numerical
     plt.hist(iris_data[col])
-    plt.title(col)
+    plt.title(col) #uses the column title
     plt.xlabel('Value')
     plt.ylabel('Frequency')
+    plt.savefig('IrisColumns.png')
+    
     plt.show()

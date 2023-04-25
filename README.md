@@ -18,7 +18,7 @@ To do this my research and our earlier lectures pointed me to the describe()[^4]
 Having just had to correct some of my weekly tasks for not using 'with' I was better able to apply it to the project. I encountered an error when I tested though and realised I needed to change the argument to a string. A quick google search was thankfully enough to correct this quickly and it then wrote the summary file. [^6]
 
 ## The second task - Saves a histogram of each variable
-
+For this part of the project, the actual plotting of the histogram was code that I found useful during our week 08 lectures. The issue I was uncertain of was how to plot each variable or read each column. Using a for loop was something that came up frequently when I researched this part, and making use of the .columns function of analysing a data frame.
 
 [^1] https://en.wikipedia.org/wiki/Iris_flower_data_set
 
