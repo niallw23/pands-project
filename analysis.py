@@ -20,7 +20,7 @@ summary = iris_data.describe() #uses describe() to get the summary, referenced i
 
 #second instruction
 #saves a histogram of each variable to png files
-
+'''
 for col in iris_data.columns[:-1]: #leaves out the last column (class) which is not numerical
     plt.hist(iris_data[col])
     plt.title(col) #uses the column title
@@ -29,7 +29,17 @@ for col in iris_data.columns[:-1]: #leaves out the last column (class) which is 
     plt.savefig (f'{col}.png') #names each png file with the column title
     
     plt.show()
-
+'''
 #third instruction
 #outputs a scatter plot of each pair of variables
+
+for i, column1 in enumerate(iris_data.columns[:-1]):
+    for j, column2 in enumerate(iris_data.columns[:-1]):
+        if i < j:  # skip duplicate plots
+            x = iris_data[column1]
+            y = iris_data[column2]
+            plt.scatter(x, y)
+            plt.xlabel(column1)
+            plt.ylabel(column2)
+            plt.show()
 
