@@ -26,6 +26,10 @@ for col in iris_data.columns[:-1]: #leaves out the last column (class) which is 
     plt.title(col) #uses the column title
     plt.xlabel('Value')
     plt.ylabel('Frequency')
-    plt.savefig('IrisColumns.png')
+    plt.savefig (f'{col}.png') #names each png file with the column title
     
     plt.show()
+
+#third instruction
+#outputs a scatter plot of each pair of variables
+
