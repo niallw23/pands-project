@@ -33,9 +33,9 @@ for col in iris_data.columns[:-1]: #leaves out the last column (class) which is 
 #third instruction
 #outputs a scatter plot of each pair of variables
 
-for i, column1 in enumerate(iris_data.columns[:-1]):
+for i, column1 in enumerate(iris_data.columns[:-1]): #runs enumerate function over data set columns, but not the last one as referenced earlier
     for j, column2 in enumerate(iris_data.columns[:-1]):
-        if i < j:  # skip duplicate plots
+        if i < j:  # skip duplicate plots, if i >= j it won't go again. initially produced plots of petallength on petallength for example.
             x = iris_data[column1]
             y = iris_data[column2]
             plt.scatter(x, y)
