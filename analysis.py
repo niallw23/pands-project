@@ -3,6 +3,7 @@
 import pandas as pd # needed to read in data set
 import matplotlib.pyplot as plt # will need for histogram
 import numpy as np # with view to my own analysis
+import seaborn as sns
 
 iris_data = pd.read_csv('iris_csv.csv') # referenced in readme
 
@@ -32,7 +33,7 @@ for col in iris_data.columns[:-1]: #leaves out the last column (class) which is 
 '''
 #third instruction
 #outputs a scatter plot of each pair of variables
-
+'''
 for i, column1 in enumerate(iris_data.columns[:-1]): #runs enumerate function over data set columns, but not the last one as referenced earlier
     for j, column2 in enumerate(iris_data.columns[:-1]):
         if i < j:  # skip duplicate plots, if i >= j it won't go again. initially produced plots of petallength on petallength for example.
@@ -42,4 +43,18 @@ for i, column1 in enumerate(iris_data.columns[:-1]): #runs enumerate function ov
             plt.xlabel(column1)
             plt.ylabel(column2)
             plt.show()
+'''
+# some additional analysis
+sns.boxplot(data = iris_data, x= 'class', y= 'sepallength')
+plt.xlabel('Species')
+plt.ylabel('Sepal Length')
+plt.title('Box Plot of Sepal Length across Iris species')
+plt.show() 
 
+
+color_palette = {'Iris-setosa': 'yellow', 'Iris-versicolor': 'green', 'Iris-virginica': 'red'}
+sns.boxplot(data= iris_data, x= 'class', y= 'sepalwidth', palette= color_palette)
+plt.xlabel('Species')
+plt.ylabel('Sepal Width')
+plt.title('Box Plot of Sepal Width across Iris species')
+plt.show()
