@@ -73,3 +73,13 @@ plt.xlabel('Species')
 plt.ylabel('Petal Width')
 plt.title('Box Plot of Petal Width across Iris species')
 plt.show()
+
+species_counts = iris_data['petallength'].value_counts() #counts the occurences of petal length in descending value
+species_counts.plot(kind='bar')# Create a bar plot
+plt.xlabel('Species')
+plt.ylabel('Frequency')
+plt.title('Frequency Histogram of Iris Species')
+plt.show()
+
+sns.pairplot(iris_data, hue='class')
+plt.show()

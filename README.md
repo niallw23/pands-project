@@ -34,6 +34,16 @@ Using the seaborn website [^12] helped me perform this initial box plot on the s
 When I got this to work I wanted to do another one for the sepal width but this time change the colors. I tried using a color= instruction but quickly returned an error. This brought me to learning about palettes and I was able to modify the examples I looked at to change the colour of the plots for my own one. [^13]
 When I got this functioning, I then completed box plots for the last two classes - this time visualising the difference across species in petal length and width. I think it was useful to be able to see the species compared by each class.
 
+## Frequency of different values
+One of the example analyses I looked at on the iris data set [^14] had some interesting frequency histograms of different features and values. I initially tried to recreate one for the classes in the set using a bar chart (as opposed to repeating earlier histogram code) but it obviously returned a fairly simple 50-50-50 result. So I decided to use this code to look at the petal length instead and see were there many results of the same length. I used the value.counts code and assigned it to the petal length column. It returned a bar chart with the values in descneding order and showed that 1.5 was the most common value. It was a more interesting use of the code in this case as opposed to showing something we would be familiar with from the raw data.
+
+
+## Pairplot
+Another visualisation that I found interesting was the use of pairplot as explored in this data analysis [^15]. It plotted all of the columns relationships against each other and I thought it was a really good summary visualisation. It also makes it possible for easy comparisons and to identify any patterns or insights by seeing the data laid out in such a manner. It was also very easy code to understand and include - the only real alteration I had to make was to the title of the column I wanted to analyse.
+
+## Heatmap
+
+
 ### References
 
 [^1] https://en.wikipedia.org/wiki/Iris_flower_data_set
@@ -63,3 +73,7 @@ When I got this functioning, I then completed box plots for the last two classes
 [^12] https://seaborn.pydata.org/generated/seaborn.boxplot.html
 
 [^13] https://www.geeksforgeeks.org/seaborn-coloring-boxplots-with-palettes/
+
+[^14] https://www.tutorialspoint.com/exploratory-data-analysis-on-iris-dataset
+
+[^15] https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
