@@ -58,3 +58,10 @@ plt.xlabel('Species')
 plt.ylabel('Sepal Width')
 plt.title('Box Plot of Sepal Width across Iris species')
 plt.show()
+
+color_palette = {'Iris-setosa': 'orange', 'Iris-versicolor': 'blue', 'Iris-virginica': 'purple'}
+sns.boxplot(data= iris_data, x= 'class', y= 'petallength', palette= color_palette)
+plt.xlabel('Species')
+plt.ylabel('Petal Length')
+plt.title('Box Plot of Petal Length across Iris species')
+plt.show()
