@@ -26,12 +26,13 @@ The enumerate function was another thing I learned more about and was then able 
 After that, assigning the x, y values and doing the scatter and labelling parts were bits I could look back on and execute from previous tasks/lectures.
 It brought me to the end of what I considered the assigned part of the tasks before beginning any further analysis of my own from some of the reading I had done.
 
-##
+## Additional analysis - some boxplots.
 One of the first things I wanted to try was some plotting using seaborn. I watched some videos on it earlier in the term and heard it referenced. It also cropped up frequently in a lot of exploratory analysis of the data set. For me, this represented a perfect storm. I was going to be able to research and use the seaborn library (I had to go back and import it first) and it was going to help me produce some meaningful analysis.
 One of the plots I frequently saw mentioned was a box plot. When I set about trying to write some of the code myself, I encountered a couple of different versions of the analysis. Some had used boxplots to compare each category (sepal length, width, petal length, width) and others compared a single category across the different species or 'classes'.
 I found that one to be more useful as I had already done quite a bit of analysis across the four categories. The chance to focus in on an analysis of a particular one was an interesting opportunity to use the box plot. So having looked at some examples, I decided to plot the sepal length and compare them across the three species - setosa, versicolor, virginica.
 Using the seaborn website [^12] helped me perform this initial box plot on the sepal length and explained exactly what the plot was showing, including explaining any outliers.
 When I got this to work I wanted to do another one for the sepal width but this time change the colors. I tried using a color= instruction but quickly returned an error. This brought me to learning about palettes and I was able to modify the examples I looked at to change the colour of the plots for my own one. [^13]
+When I got this functioning, I then completed box plots for the last two classes - this time visualising the difference across species in petal length and width. I think it was useful to be able to see the species compared by each class.
 
 ### References
 
