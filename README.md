@@ -46,7 +46,10 @@ The last piece of analysis was also included in the example done on Geeks for ge
 There were some parts of this I didn't understand - in the example code I was unsure what annot=True was doing but it was straightforward to read up and understand why it was there [^16] and that it displayed the numerical values on the heatmap. And although not on the code I used for inspiration, I set out to be able to edit or assign a colour to the heatmap and was able to use matplotlib.org [^17] to assign the colour value 'coolwarm' which I thought both worked and looked well.
 
 # Conclusion
-
+Overall, this was an interesting final project in the scripting and programming module for a number of reasons. It was challenging to put many weeks' worth of new learning into a single task and spread this out over a period of time. It was interesting to see which parts of my learning had really stuck and were easily accessible when trying to write my code, and then obviously on the other hand, the parts which required quite a few examples and reading to figure out. To even be able to research, read and make sense of some of the sites I have used for this project demonstrates how far we have come over the course of the term. I started out with zero coding experience and now was able to at least make sense of, and try to adapt code to fit my own needs.
+In analysing the data set I was able to put a lot of the foundational knowledge I've learned (am learning) to use, and test my skills in exploring and interpreting data.
+With regards to the data itself and the visualisations and analyses - I think through the variation of summary statistics, histograms, box plots etc. it was interesting to see how they could be used to identify patterns and differences. The simplicity and fact that the data was well known also made it easier to focus on applying the skills as I had a better idea of the expected outcome and resources to fall back on.
+It was very much a worthwhile exercise and allowed me the opportunity to gain practical experience with data visualization, summary statistics, and exploratory data analysis.
 
 ### References
 
