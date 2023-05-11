@@ -16,12 +16,12 @@ summary = iris_data.describe() #uses describe() to get the summary, referenced i
 #with open('iris_summary.txt', 'w') as file:
 #    file.write(summary)  # got an error that argument must be string
 
-#with open ('iris_summary.txt', 'w') as file:
-    #file.write(summary.to_string())
+with open ('iris_summary.txt', 'w') as file:
+    file.write(summary.to_string())
 
 #second instruction
 #saves a histogram of each variable to png files
-'''
+
 for col in iris_data.columns[:-1]: #leaves out the last column (class) which is not numerical
     plt.hist(iris_data[col])
     plt.title(col) #uses the column title
@@ -30,10 +30,10 @@ for col in iris_data.columns[:-1]: #leaves out the last column (class) which is 
     plt.savefig (f'{col}.png') #names each png file with the column title
     
     plt.show()
-'''
+
 #third instruction
 #outputs a scatter plot of each pair of variables
-'''
+
 for i, column1 in enumerate(iris_data.columns[:-1]): #runs enumerate function over data set columns, but not the last one as referenced earlier
     for j, column2 in enumerate(iris_data.columns[:-1]):
         if i < j:  # skip duplicate plots, if i >= j it won't go again. initially produced plots of petallength on petallength for example.
@@ -43,7 +43,7 @@ for i, column1 in enumerate(iris_data.columns[:-1]): #runs enumerate function ov
             plt.xlabel(column1)
             plt.ylabel(column2)
             plt.show()
-'''
+
 # some additional analysis
 sns.boxplot(data = iris_data, x= 'class', y= 'sepallength')
 plt.xlabel('Species')
@@ -82,4 +82,9 @@ plt.title('Frequency Histogram of Iris Species')
 plt.show()
 
 sns.pairplot(iris_data, hue='class')
+plt.show()
+
+correlation_matrix = iris_data.corr() #calculate the correlation matrix
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')# Create a heatmap of the correlation matrix
+plt.title('Correlation Heatmap of Iris Dataset')
 plt.show()

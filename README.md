@@ -42,6 +42,10 @@ One of the example analyses I looked at on the iris data set [^14] had some inte
 Another visualisation that I found interesting was the use of pairplot as explored in this data analysis [^15]. It plotted all of the columns relationships against each other and I thought it was a really good summary visualisation. It also makes it possible for easy comparisons and to identify any patterns or insights by seeing the data laid out in such a manner. It was also very easy code to understand and include - the only real alteration I had to make was to the title of the column I wanted to analyse.
 
 ## Heatmap
+The last piece of analysis was also included in the example done on Geeks for geeks. It referenced heatmaps and as a sports fan this piqued my interest. I'm used to seeing heatmaps used to display the ground a player has covered and the darker areas being parts where he/she spent more time. I was curious as to how this would work with the data set as I didn't see it being a useful exercise to map the values. However, when I looked at their example I realised they were going to use it to map the correlation of values across the columns and I thought that would be an interesting piece of analysis. It was also noted that any non-numeric values would be ignored.
+There were some parts of this I didn't understand - in the example code I was unsure what annot=True was doing but it was straightforward to read up and understand why it was there [^16] and that it displayed the numerical values on the heatmap. And although not on the code I used for inspiration, I set out to be able to edit or assign a colour to the heatmap and was able to use matplotlib.org [^17] to assign the colour value 'coolwarm' which I thought both worked and looked well.
+
+# Conclusion
 
 
 ### References
@@ -77,3 +81,7 @@ Another visualisation that I found interesting was the use of pairplot as explor
 [^14] https://www.tutorialspoint.com/exploratory-data-analysis-on-iris-dataset
 
 [^15] https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
+
+[^16] https://towardsdatascience.com/5-ways-to-use-a-seaborn-heatmap-python-tutorial-c79950f5add3
+
+[^17] https://matplotlib.org/stable/tutorials/colors/colormaps.html
